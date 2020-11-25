@@ -1,0 +1,25 @@
+{
+    "products": [
+        {
+            "id": 1, 
+            "title": "Nvidia RTX 3090",
+            "price": 1499,
+            "type": "gpu",
+            "brand": "nvidia"
+        },
+        {
+            "id": 2,
+            "title": "AMD 6800XT",
+            "price": 649,
+            "type": "gpu",
+            "brand": "amd"
+        },
+        {
+            "id": 3,
+            "title": "AMD 5900x",
+            "price": 549,
+            "type":"cpu",
+            "brand": "amd"
+        }
+    ]
+}
