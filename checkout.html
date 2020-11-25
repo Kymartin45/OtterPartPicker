@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Buy cool new product</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://polyfill.io/v3/polyfill.min.js?version=3.52.1&features=fetch"></script>
+    <script src="https://js.stripe.com/v3/"></script>
+  </head>
+  <body>
+    <section>
+      <div class="product">
+        <img
+          src="https://www.nvidia.com/content/dam/en-zz/Solutions/geforce/ampere/rtx-3090/geforce-rtx-3090-shop-630-d@2x.png"
+          alt="Nvidia RTX 3090 24GB"
+        />
+        <div class="description">
+          <h3>Stubborn Attachments</h3>
+          <h5>$1499.00</h5>
+        </div>
+      </div>
+      <button id="checkout-button">Checkout</button>
+    </section>
+  </body>
+  <script type="text/javascript">
+    // Create an instance of the Stripe object with your publishable API key
+    var stripe = Stripe("pk_test_51Hpq4CIkuecL7QkUYJy3ab2YCNTeB63EbUF2SiUw2II12HY4DbA391Vf3t9pFxLjsrxJayaWkCLVPybVk4fi4ume00OTiZijKd");
+    var checkoutButton = document.getElementById("checkout-button");
+
+    checkoutButton.addEventListener("click", function () {
+        fetch("/home/", {
+            method: "POST",
+        })
+        .then(function (response) {
+            return response.json();
+        })
+        .then(function (session) {
+            return stripe.redirectToCheckout({sessionId: session.id});
+        })
+        .then(function (result) {
+            //Error message to customer if network 
+            //Called by error.message
+            if (result.error) {
+                alert(result.error.message);
+            }
+        })
+        .catch(function (error) {
+            console.error("Error:", error);
+        });
+    });
+    </script>
+</html>

@@ -25,7 +25,7 @@ func main() {
 	r := mux.NewRouter()
 
 	//Serve static html from localhost:8080/home
-	r.PathPrefix("/home/").Handler(http.StripPrefix("/home", http.FileServer(http.Dir(dir))))
+	r.PathPrefix("/home").Handler(http.StripPrefix("/home", http.FileServer(http.Dir(dir))))
 
 	svr := &http.Server{
 		Handler:      r,
