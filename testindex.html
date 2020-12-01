@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Oughta pick your parts soon. Shop OtterPartPicker</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <link rel="stylesheet" href="style.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  <style>
+    /* Remove the navbar's default rounded borders and increase the bottom margin */ 
+    .navbar {
+      margin-bottom: 50px;
+      border-radius: 0;
+    }
+    
+    /* Remove the jumbotron's default bottom margin */ 
+     .jumbotron {
+      margin-bottom: 0;
+    }
+   
+    /* Add a gray background color and some padding to the footer */
+    footer {
+      background-color: #f2f2f2;
+      padding: 25px;
+    }
+  </style>
+</head>
+<body>
+
+<div class="OtterPartPicker">
+  <div class="container text-center">
+    <h1>OtterPartPicker</h1>      
+    <p>Pick the parts and enjoy</p>
+  </div>
+</div>
+
+<nav class="navbar navbar-inverse">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>                        
+      </button>
+      <a class="navbar-brand" href="#">Home</a>
+    </div>
+      <ul class="nav navbar-nav navbar-right">
+        <li><a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ"><span class="testUser"></span> Example User</a></li>
+        <li><a href="checkout.html"><span class="testCart"></span> Cart</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<div class="container">    
+  <div class="row">
+    <div class="col-sm-4">
+      <div class="panel panel-primary">
+        <div class="panel-body"><img src="https://www.nvidia.com/content/dam/en-zz/Solutions/geforce/ampere/rtx-3090/geforce-rtx-3090-shop-630-d@2x.png" class="gpu1" style="width:99%" alt="Image"></div>
+        <div class="panel-footer">NVIDIA RTX 3090 24gb</div>
+        <div class="panel-footer" id="gpu1">$1499.99</div>
+        <a href="checkout.html"><button>Add to cart</button></a>
+      </div>
+    </div>
+    <div class="col-sm-4"> 
+      <div class="panel panel-danger">
+        <div class="panel-body"><img src="https://m.media-amazon.com/images/I/619RjL6aj9L.jpg" class="cpu1" style="width:60%" alt="Image"></div>
+        <div class="panel-footer">AMD Ryzen 9 5950X</div>
+        <div class="panel-footer" id="cpu1">$799.99</div>
+        <a href="checkout.html"><button>Add to cart</button></a>
+      </div>
+    </div>
+    <div class="col-sm-4"> 
+      <div class="panel panel-success">
+        <div class="panel-body"><img src="https://images-na.ssl-images-amazon.com/images/I/41iaDwLv6eL._AC_SY400_.jpg" class="mobo1" style="width:59%" alt="Image"></div>
+        <div class="panel-footer">Gigabyte X570 Aorus Elite AM4</div>
+        <div class="panel-footer" id="mobo1">$179.99</div>
+        <a href="checkout.html"><button>Add to cart</button></a>
+      </div>
+    </div>
+  </div>
+</div><br>
+
+<div class="container">    
+  <div class="row">
+    <div class="col-sm-4">
+      <div class="panel panel-primary">
+        <div class="panel-body"><img src="https://cdna.pcpartpicker.com/static/forever/images/product/61d130b3e73cac2901831480ee041b75.1600.jpg" class="ram1" style="width:70%" alt="Image"></div>
+        <div class="panel-footer">G.Skill Trident Z Royal 16GB DDR4-3200</div>
+        <div class="panel-footer" id="ram1">$179.99</div>
+        <a href="checkout.html"><button>Add to cart</button></a>
+      </div>
+    </div>
+    <div class="col-sm-4"> 
+      <div class="panel panel-primary">
+        <div class="panel-body"><img src="https://www.corsair.com/medias/sys_master/images/images/hc4/h4d/8921865486366/-CP-9020180-NA-Gallery-RM850x-PSU-01.png" class="psu1" style="width:53%" alt="Image"></div>
+        <div class="panel-footer">Corsair RM850x</div>
+        <div class="panel-footer" id="psu1">$129.99</div>
+        <a href="checkout.html"><button>Add to cart</button></a>
+      </div>
+    </div>
+    <div class="col-sm-4"> 
+      <div class="panel panel-primary">
+        <div class="panel-body"><img src="https://m.media-amazon.com/images/S/aplus-media/vc/c96a7303-ade9-465a-873b-30a920ab5fba.__CR0,0,300,300_PT0_SX300_V1___.png" class="case1" style="width:55%" alt="Image"></div>
+        <div class="panel-footer">NZXT H510</div>
+        <div class="panel-footer" id="case1">$69.99</div>
+        <a href="checkout.html"><button>Add to cart</button></a>
+      </div>
+    </div>
+  </div>
+</div><br><br>
+
+<footer class="container-fluid text-left">
+  <p>Author: Kyle Martin</p>  
+  <form class="form-inline">Thanks for using :)
+  </form>
+</footer>
+
+</body>
+</html>
