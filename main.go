@@ -20,6 +20,7 @@ func main() {
 	stripe.Key = "sk_test_51Hpq4CIkuecL7QkUnVXbFdWYIskjwYpA8248lJ0sffdPBqslK7uzOScCG6RCXNhW3ZkziF7CJYEx65dVzAO9TZgf001jfrLSwH"
 
 	var dir string
+	//Will change static to public once Heroku is implemented
 	flag.StringVar(&dir, "dir", ".", "./static")
 	flag.Parse()
 	r := mux.NewRouter()
